@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products Details | Eccentric Elegance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #ffd700;
+            color: #008080;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card-title {
+            color: #008080;
+        }
+        .btn-primary {
+            background-color: #008080;
+            border-color: #008080;
+        }
+        .btn-primary:hover {
+            background-color: #006666;
+            border-color: #006666;
+        }
+        .footer {
+            background-color: #ffd700;
+            color: #0a0505;
+        }
+        .footer-sitemap {
+            color: #0e0505;
+            margin: 0.5rem;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" width="50" height="26" class="d-inline-block align-text-top">
+                <span class="text-dark">Eccentric Elegance</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            COLLECTIONS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="jewelery.html">Jewelry</a></li>
+                            <li><a class="dropdown-item" href="home-decor.html">Home Decor</a></li>
+                            <li><a class="dropdown-item" href="pots.html">Ceramic Pots</a></li>
+                            <li><a class="dropdown-item" href="mug.html">Mugs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <button class="btn btn-outline-dark me-3" type="submit"><a class="nav-link" href="login.html">Login</a></button>
+                    <button class="btn btn-outline-dark" type="submit"><a class="nav-link" href="signup.html">Sign Up</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">All Products Details</h1>
+
+  
+<section id="jewelry" class="mb-5">
+    <h2 class="text-center mb-3">Jewelry Collection</h2>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j1.jpg" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j2.webp" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j2.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j3.jpg" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j3.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j4.png" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j4.png')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j5.png" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j5.png')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4">
+                <img src="img/jew/j6.webp" class="card-img-top" alt="Elegant Necklace">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Necklace</h5>
+                    <p class="card-text">This stunning necklace is crafted with the finest materials and designed to add a touch of elegance to any outfit.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Materials:</strong> Gold, Diamonds</p>
+                    <p><strong>Dimensions:</strong> 18 inches long</p>
+                    <p><strong>Description:</strong> This elegant necklace features a beautiful design with intricate details. It is perfect for special occasions and makes a great gift for someone special.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Necklace', 120.00, 1, 'img/jew/j6.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="home-decor" class="mb-5">
+    <h2 class="text-center mb-3">Home Decor Collection</h2>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h1.png" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h1.png')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h2.webp" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h2.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h3.jpg" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h3.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h4.jpg" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h4.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h5.png" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h5.png')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/hd/h6.jpg" class="card-img-top" alt="Modern Lamp">
+                <div class="card-body">
+                    <h5 class="card-title">Modern Lamp</h5>
+                    <p class="card-text">Illuminate your space with this modern lamp.</p>
+                    <p><strong>Price: $120.00</strong></p>
+                    <p><strong>Dimensions:</strong> 24 inches tall</p>
+                    <p><strong>Description:</strong> This modern lamp features a sleek design and provides ambient lighting for any room.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Modern Lamp', 120.00, 1, 'img/hd/h6.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="mugs" class="mb-5">
+    <h2 class="text-center mb-3">Mugs Collection</h2>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m1.webp" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mug/m1.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m2.webp" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mug/m2.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m3.webp" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mug/m3.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m4.webp" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mugs1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m5.png" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mugs1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/mug/m6.jpg" class="card-img-top" alt="Elegant Coffee Mug">
+                <div class="card-body">
+                    <h5 class="card-title">Elegant Coffee Mug</h5>
+                    <p class="card-text">Enjoy your morning coffee in style with this elegant ceramic mug.</p>
+                    <p><strong>Price: $20.00</strong></p>
+                    <p><strong>Capacity:</strong> 12 oz.</p>
+                    <p><strong>Description:</strong> This coffee mug features a classic design with a comfortable handle and is dishwasher safe.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Elegant Coffee Mug', 20.00, 1, 'img/mugs1.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div></section>
+
+
+<section id="ceramic-pots" class="mb-5">
+    <h2 class="text-center mb-3">Ceramic Pots Collection</h2>
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p1.jpeg" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p16.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p2.jpg" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p17.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p3.webp" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p18.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p4.webp" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p19.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p5.webp" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p20.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/pots/p6.webp" class="card-img-top" alt="Decorative Ceramic Pot">
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Ceramic Pot</h5>
+                    <p class="card-text">Enhance your space with this decorative ceramic pot.</p>
+                    <p><strong>Price: $60.00</strong></p>
+                    <p><strong>Dimensions:</strong> 10 inches tall</p>
+                    <p><strong>Description:</strong> This ceramic pot features intricate patterns and is suitable for both indoor and outdoor use.</p>
+                    <button class="btn btn-primary" onclick="addToCart('Decorative Ceramic Pot', 60.00, 1, 'img/pots/p21.webp')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <footer class="footer py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 me-5">
+                    <h5 class="my-3">Mumbai</h5>
+                    <p><i class="bi bi-geo-alt"></i> 202, ETC</p>
+                    <p><i class="bi bi-telephone"></i> - 987463215</p>
+                    <p><i class="bi bi-envelope"></i> Email - abc@gmail.com</p>
+                    <hr>
+
+                    <h5 class="my-3">Ratnagiri</h5>
+                    <p><i class="bi bi-geo-alt"></i> 204, ETC</p>
+                    <p><i class="bi bi-telephone"></i> - 987463215</p>
+                    <p><i class="bi bi-envelope"></i> Email - abc@gmail.com</p>
+                </div>
+                <div class="col-md-4 me-5">
+                    <h5 class="my-3">Sitemap</h5>
+                    <a href="index.html" class="btn btn-outline-light footer-sitemap">Home</a>
+                    <a href="index.html#about" class="btn btn-outline-light footer-sitemap">About US</a>
+                    <a href="contact.html" class="btn btn-outline-light footer-sitemap">Contact Us</a>
+                    <a href="login.html" class="btn btn-outline-light footer-sitemap">Login</a>
+                    <a href="signup.html" class="btn btn-outline-light footer-sitemap">Sign Up</a>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="my-3">Subscribe to our Newsletter</h5>
+                    <form action="">
+                        <input type="text" name="text" class="form-control" placeholder="Enter Email Id ">
+                        <button class="btn btn-primary mt-3">Subscribe</button>
+                    </form>
+                    <div class="my-5">
+                        <h6>This website is a copyright of &copy;Eccentric Elegance of year 2024-2025</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function addToCart(title, price, quantity, image) {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const existingItemIndex = cartItems.findIndex(item => item.title === title);
+
+            if (existingItemIndex > -1) {
+                cartItems[existingItemIndex].quantity += quantity;
+            } else {
+                cartItems.push({ title, price, quantity, image });
+            }
+
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+</html>
+
