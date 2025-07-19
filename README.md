@@ -9,7 +9,6 @@ Built using **HTML** and **CSS**
 
 ![Website Screenshot](Ceramic_Pots_Page)
 
-![Website Screenshot](Gallery_Page)
 
 ---
 
