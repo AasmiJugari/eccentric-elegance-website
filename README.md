@@ -7,7 +7,9 @@ Built using **HTML** and **CSS**
 
 ## 📷 Project Screenshot
 
-![Website Screenshot](screenshots/website_demo.png)
+![Website Screenshot](Ceramic_Pots_Page)
+
+![Website Screenshot](Galllery_Page)
 
 ---
 
